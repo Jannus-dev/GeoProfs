@@ -20,9 +20,8 @@ De API van deze website is te vinden op een andere Git Repo. Link naar deze Repo
 - [@Micha](https://github.com/NotDetective)
 - [@Bo](https://github.com/bleenie)
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+# Setting up work space
 
 ## Type Support for `.vue` Imports in TS
 
