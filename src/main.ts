@@ -1,18 +1,11 @@
 import './assets/main.css'
 
-import { createApp } from 'vue';
-import { createWebHistory, createRouter } from "vue-router";
-import Admin from './pages/Admin.vue';
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
 
-const routes = [
-   { path: '/', component: Admin },
-]
+const app = createApp(App)
 
-const router = createRouter({
-    history: createWebHistory(),
-    routes
-})
+app.use(router)
 
-const app = createApp({})
-    .use(router)
-    .mount('#app');
+app.mount('#app')

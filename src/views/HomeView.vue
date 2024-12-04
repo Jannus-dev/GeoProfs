@@ -1,13 +1,9 @@
 <script setup lang="ts">
+import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
-   <h2>Halfgdlo</h2>
-  </header>
-
   <main>
-    Halloooo
+    <TheWelcome />
   </main>
 </template>
-
