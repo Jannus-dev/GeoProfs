@@ -1,5 +1,5 @@
 # GeoProfs
-> The API for the GeoProfs project
+> The frontend for the GeoProfs project
 
 ## Table of Contents
 - [Installation](#installation)
