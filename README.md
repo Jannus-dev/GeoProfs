@@ -1,3 +1,4 @@
+```
 # GeoProfs
 > The frontend for the GeoProfs project
 
@@ -39,4 +40,4 @@ npm start
 - [@NotDetective](https://github.com/NotDetective)
 - [@Jannus](https://github.com/Jannus-dev)
 - [@bleenie](https://github.com/bleenie)
-
+```
