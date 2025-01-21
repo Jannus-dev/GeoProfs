@@ -6,7 +6,7 @@ import Meldingen from "@/components/Meldingen.vue";
 <template>
   <div class="flex items-center">
     <img src="@/assets/img/logo-small.png">
-    <H1>GEOPROFS</H1>
+    <H1 class="text-primary-white">GEOPROFS</H1>
     <Meldingen/>
   </div>
 </template>
