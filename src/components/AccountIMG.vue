@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <img src="../assets/img/kees.jpg" alt="Profiel Foto" class="rounded-full max-w-12 ml-3">
+  <img src="../assets/img/user_image.jpg" alt="Profiel Foto" class="rounded-full max-w-12 ml-3">
 </template>
 
 <style scoped>
