@@ -7,8 +7,6 @@ import Separator from "@/components/Separator.vue";
 <template>
   <div class="w-10/12 p-7 h-fit">
     <div class="bg-primary-white w-full h-full rounded-xl p-3">
-      <Title />
-      <Separator class="w-full"/>
 
 <!--      Hier komt de content van de pagina-->
       <slot/>

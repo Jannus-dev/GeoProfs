@@ -3,6 +3,9 @@
 import SideNav from "@/components/SideNav.vue";
 import ContentSpace from "@/components/ContentSpace.vue";
 import { provide, ref } from 'vue'
+import DashboardContent from "@/components/DashboardContent.vue";
+import ContentSpaceDash from "@/components/ContentSpaceDash.vue";
+import DashboardTopInfo from "@/components/DashboardTopInfo.vue";
 
 provide(/* key */ 'message', /* value */ 'Dashboard')
 </script>
@@ -10,8 +13,11 @@ provide(/* key */ 'message', /* value */ 'Dashboard')
 <template>
   <div class="flex w-full h-screen bg-background">
     <SideNav />
-    <ContentSpace />
-  </div>
+    <ContentSpaceDash>
+      <DashboardTopInfo />
+    </ContentSpaceDash>
+
+    </div>
 </template>
 
 <style scoped>
