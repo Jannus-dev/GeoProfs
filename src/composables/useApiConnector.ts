@@ -28,5 +28,26 @@ export const useApiConnector = () => {
     return axios.post(url, data);
   };
 
-  return { get, post };
+  /**
+   * Makes a PATCH request to the API.
+   * @param {string} endpoint - The specific endpoint to hit.
+   * @param {object} data - Data to send in the request body.
+   * @returns {Promise<any>} Axios response data.
+   */
+  const patch = async (endpoint: string, data: object) => {
+    const url = createApiUrl(endpoint);
+    return axios.patch(url, data);
+  };
+
+  /**
+   * Makes a DELETE request to the API.
+   * @param {string} endpoint - The specific endpoint to hit.
+   * @returns {Promise<any>} Axios response data.
+   */
+  const deleteRequest = async (endpoint: string) => {
+    const url = createApiUrl(endpoint);
+    return axios.delete(url);
+  };
+
+  return { get, post, patch, deleteRequest };
 };
