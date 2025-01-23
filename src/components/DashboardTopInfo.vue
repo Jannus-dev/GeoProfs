@@ -4,7 +4,7 @@ import Button from "@/stories/Button.vue";
 </script>
 
 <template>
-  <div class="ml-5 flex justify-around h-20 items-center">
+  <div class="ml-5 flex justify-around h-20 items-center w-full">
     <div class="text-center">
       <p>Totale vrije tijd:</p>
       <p>[tijd] uur</p>

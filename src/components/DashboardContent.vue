@@ -1,11 +1,15 @@
 <script setup lang="ts">
 
+import DashboardVerlofTabel from "@/components/DashboardVerlofTabel.vue";
 </script>
 
 <template>
-  <div class="ml-5">
-    <h1 class="text-3xl font-bold">Dashboard</h1>
-    <p class="text-sm text-gray-500">Welcome back, User</p>
+  <div class="m-5 flex flex-col">
+  <DashboardVerlofTabel/>
+    <a href="/MijnVerloffen" class="text-center mt-3">Zie meer →</a>
+
+
+
   </div>
 </template>
 

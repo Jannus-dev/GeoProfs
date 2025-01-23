@@ -13,10 +13,11 @@ provide(/* key */ 'message', /* value */ 'Dashboard')
 <template>
   <div class="flex w-full h-screen bg-background">
     <SideNav />
-    <div class="w-full m-0 p-0">
+    <div class="w-5/6">
     <ContentSpaceDash>
       <DashboardTopInfo />
     </ContentSpaceDash>
+
     <ContentSpaceDash>
       <DashboardContent />
     </ContentSpaceDash>
