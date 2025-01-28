@@ -11,8 +11,7 @@ import Separator from "@/components/Separator.vue";
       <Separator class="w-full"/>
 
 <!--      Hier komt de content van de pagina-->
-      <slot/>
-
+      <slot />
     </div>
   </div>
 </template>
