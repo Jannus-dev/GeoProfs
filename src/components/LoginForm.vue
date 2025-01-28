@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import {useApiConnector} from "@/composables/useApiConnector.ts";
+
+const {post} = useApiConnector();
 
 const email = ref('');
 const password = ref('');
@@ -7,6 +10,22 @@ const rememberMe = ref(false);
 
 const handleSubmit = () => {
   console.log('Inloggen met:', { email: email.value, password: password.value, rememberMe: rememberMe.value });
+  post('login', {email: email.value, password: password.value, remember: rememberMe.value})
+    .then(response => {
+      if (response.status === 201) {
+        // Redirect to the dashboard page
+        window.location.href = '/dashboard';
+
+      } else {
+        // Display an error message
+        console.error('Inloggen mislukt:', response.data.message || 'Er is iets misgegaan.');
+        alert(response.data.message || 'Er is iets misgegaan.');
+      }
+    })
+    .catch(error => {
+      console.error('Fout:', error.message || error);
+      alert('Er is een fout opgetreden. Probeer het opnieuw.');
+    });
 };
 </script>
 
