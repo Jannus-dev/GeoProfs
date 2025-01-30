@@ -127,8 +127,19 @@
           required
           class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
         /><br /><br />
-
-        <button type="submit">Werknemer toevoegen</button>
+        <div class="flex justify-end gap-[20px] mt-[10px]">
+          <router-link to="/dashboard"
+            ><button class="bg-bd-grey w-[150px] h-[40px] text-white font-bold">
+              ANNULEREN
+            </button>
+          </router-link>
+          <button
+            type="submit"
+            class="bg-primary-100 w-[200px] h-[40px] text-white font-bold"
+          >
+            ACCOUNT MAKEN
+          </button>
+        </div>
       </div>
     </form>
   </div>
