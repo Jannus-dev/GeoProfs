@@ -1,6 +1,41 @@
+<script setup lang="ts">
+import { ref } from "vue";
+import { useApiConnector } from "@/composables/useApiConnector";
+const { post } = useApiConnector();
+const formData = ref({
+  firstname: "",
+  middlename: "",
+  lastname: "",
+  email: "",
+  street: "",
+  street_number: "",
+  postal_code: "",
+  city: "",
+  contract_type: "",
+  work_hours: "",
+  hired_at: "",
+  role: "",
+  department: "",
+  section: "",
+});
+const handleSubmit = async () => {
+  try {
+    const response = await post("user/create", formData.value);
+    console.log("Success:", response);
+    // Optionally, redirect or display a success message
+  } catch (error) {
+    console.error("Error submitting form:", error);
+  }
+};
+</script>
+
 <template>
   <div class="admin bg-off-white m-5 p-5">
-    <form action="/submit" method="post" class="flex justify-center gap-[80px]">
+    <form
+      @submit.prevent="handleSubmit"
+      method="post"
+      class="flex justify-center gap-[80px]"
+    >
       <div class="flex flex-col">
         <label for="firstname">Voornaam:</label>
         <input
