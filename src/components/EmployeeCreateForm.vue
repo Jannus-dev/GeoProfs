@@ -1,6 +1,6 @@
 <template>
   <div class="admin bg-off-white m-5 p-5">
-    <form action="/submit" method="post" class="flex">
+    <form action="/submit" method="post" class="flex justify-center gap-[80px]">
       <div class="flex flex-col">
         <label for="firstname">Voornaam:</label>
         <input
@@ -8,20 +8,43 @@
           id="firstname"
           name="firstname"
           required
-          class="border border-solid border-bd-grey m-3"
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
+        /><br /><br />
+
+        <label for="middlename">Middelna(a)m(en):</label>
+        <input
+          type="text"
+          id="middlename"
+          name="middlename"
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
         /><br /><br />
 
         <label for="lastname">Achternaam:</label>
-        <input type="text" id="lastname" name="lastname" required /><br /><br />
-
-        <label for="middlename">Middelna(a)m(en):</label>
-        <input type="text" id="middlename" name="middlename" /><br /><br />
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          required
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
+        /><br /><br />
 
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required /><br /><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
+        /><br /><br />
 
         <label for="street">Straat:</label>
-        <input type="text" id="street" name="street" required /><br /><br />
+        <input
+          type="text"
+          id="street"
+          name="street"
+          required
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
+        /><br /><br />
 
         <label for="street-number">Huisnummer:</label>
         <input
@@ -29,6 +52,7 @@
           id="street-number"
           name="street_number"
           required
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
         /><br /><br />
 
         <label for="postal-code">Postcode:</label>
@@ -37,10 +61,17 @@
           id="postal-code"
           name="postal_code"
           required
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
         /><br /><br />
 
         <label for="city">Woonplaats:</label>
-        <input type="text" id="city" name="city" required /><br /><br />
+        <input
+          type="text"
+          id="city"
+          name="city"
+          required
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
+        /><br /><br />
       </div>
       <div class="flex flex-col">
         <label for="contract-type">Contracttype:</label>
@@ -49,6 +80,7 @@
           id="contract-type"
           name="contract_type"
           required
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
         /><br /><br />
 
         <label for="work-hours">Werkuren:</label>
@@ -57,13 +89,26 @@
           id="work-hours"
           name="work_hours"
           required
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
         /><br /><br />
 
         <label for="hired-at">In dienst sinds:</label>
-        <input type="date" id="hired-at" name="hired_at" required /><br /><br />
+        <input
+          type="date"
+          id="hired-at"
+          name="hired_at"
+          required
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
+        /><br /><br />
 
         <label for="role">Functie:</label>
-        <input type="text" id="role" name="role" required /><br /><br />
+        <input
+          type="text"
+          id="role"
+          name="role"
+          required
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
+        /><br /><br />
 
         <label for="department">Afdeling:</label>
         <input
@@ -71,10 +116,17 @@
           id="department"
           name="department"
           required
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
         /><br /><br />
 
         <label for="section">Sectie:</label>
-        <input type="text" id="section" name="section" /><br /><br />
+        <input
+          type="text"
+          id="section"
+          name="section"
+          required
+          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
+        /><br /><br />
 
         <button type="submit">Werknemer toevoegen</button>
       </div>
