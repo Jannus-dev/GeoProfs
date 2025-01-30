@@ -1,11 +1,12 @@
-import './assets/main.css'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import { useAuthStore } from '@/stores/auth.ts';
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+const app = createApp(App);
 
-const app = createApp(App)
+const { checkAuth } = useAuthStore();
+await checkAuth(); // Controleer token bij app-opstart
 
-app.use(router)
-
-app.mount('#app')
+app.use(router);
+app.mount('#app');

@@ -12,7 +12,7 @@ export const useApiConnector = () => {
    * @param {string} endpoint - The specific endpoint to hit.
    * @returns {Promise<any>} Axios response data.
    */
-  const get = async (endpoint: string) => {
+  const get = async (endpoint: string, headers: object ={}) => {
     const url = createApiUrl(endpoint);
     return axios.get(url);
   };
@@ -23,7 +23,7 @@ export const useApiConnector = () => {
    * @param {object} data - Data to send in the request body.
    * @returns {Promise<any>} Axios response data.
    */
-  const post = async (endpoint: string, data: object) => {
+  const post = async (endpoint: string, data: object, headers: object ={}) => {
     const url = createApiUrl(endpoint);
     return axios.post(url, data);
   };
@@ -34,9 +34,9 @@ export const useApiConnector = () => {
    * @param {object} data - Data to send in the request body.
    * @returns {Promise<any>} Axios response data.
    */
-  const patch = async (endpoint: string, data: object) => {
+  const patch = async (endpoint: string, data: object, headers: object ={}) => {
     const url = createApiUrl(endpoint);
-    return axios.patch(url, data);
+    return axios.patch(url, data, headers);
   };
 
   /**
