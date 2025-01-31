@@ -42,7 +42,7 @@ const handleLogout = async () => {
   } finally {
     // Voer altijd de lokale logout-actie uit
     logout();
-    window.location.href = "/login";
+    window.location.href = "/";
   }
 };
 </script>
