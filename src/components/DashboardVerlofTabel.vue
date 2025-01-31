@@ -18,15 +18,10 @@ const fetchLeaveData = async () => {
   try {
     isLoading.value = true;
 
-    const response = await get("leave", {
-      params: {
-        status: "asc",
-        limit: 10,
-      },
-      headers: {
-        Authorization: token.value, // Alleen het token, zonder "Bearer"
-      },
-    });
+    const response = await get("leave?limit=10&status=asc", {
+      Authorization: token.value,
+    }
+    );
 
 
     if (response.status === 200) {

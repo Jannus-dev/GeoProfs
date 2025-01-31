@@ -14,7 +14,7 @@ export const useApiConnector = () => {
    */
   const get = async (endpoint: string, data: object, headers: object ={}) => {
     const url = createApiUrl(endpoint);
-    return axios.get(url);
+    return axios.get(url, headers);
   };
 
   /**
