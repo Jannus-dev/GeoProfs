@@ -26,10 +26,17 @@ router.beforeEach(async (to, from, next) => {
 
   await checkAuth(); // Controleer of de gebruiker ingelogd is
 
-  if (to.meta.requiresAuth && !isAuth.value) {
-    next({ name: 'login' }); // Als niet ingelogd, stuur naar loginpagina
-  } else {
-    next(); // Anders sta navigatie toe
+  // Als de gebruiker ingelogd is en naar de loginpagina wil, stuur door naar dashboard
+  if (to.name === 'login' && isAuth.value) {
+    next({ name: 'Dashboard' });
+  }
+  // Als de route authenticatie vereist en de gebruiker niet is ingelogd, stuur naar loginpagina
+  else if (to.meta.requiresAuth && !isAuth.value) {
+    next({ name: 'login' });
+  }
+  // Sta navigatie toe voor alle andere gevallen
+  else {
+    next();
   }
 });
 
