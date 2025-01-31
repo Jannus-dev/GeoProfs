@@ -12,7 +12,7 @@ export const useApiConnector = () => {
    * @param {string} endpoint - The specific endpoint to hit.
    * @returns {Promise<any>} Axios response data.
    */
-  const get = async (endpoint: string, headers: object ={}) => {
+  const get = async (endpoint: string, data: object, headers: object ={}) => {
     const url = createApiUrl(endpoint);
     return axios.get(url);
   };
