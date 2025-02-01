@@ -43,16 +43,16 @@ const handleSubmit = async () => {
           id="firstname"
           name="firstname"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
 
         <label for="middlename">Middelna(a)m(en):</label>
         <input
           type="text"
           id="middlename"
           name="middlename"
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
 
         <label for="lastname">Achternaam:</label>
         <input
@@ -60,8 +60,8 @@ const handleSubmit = async () => {
           id="lastname"
           name="lastname"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
 
         <label for="email">E-mail:</label>
         <input
@@ -69,8 +69,8 @@ const handleSubmit = async () => {
           id="email"
           name="email"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
 
         <label for="street">Straat:</label>
         <input
@@ -78,8 +78,8 @@ const handleSubmit = async () => {
           id="street"
           name="street"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
 
         <label for="street-number">Huisnummer:</label>
         <input
@@ -87,8 +87,8 @@ const handleSubmit = async () => {
           id="street-number"
           name="street_number"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
 
         <label for="postal-code">Postcode:</label>
         <input
@@ -96,8 +96,8 @@ const handleSubmit = async () => {
           id="postal-code"
           name="postal_code"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
 
         <label for="city">Woonplaats:</label>
         <input
@@ -105,8 +105,8 @@ const handleSubmit = async () => {
           id="city"
           name="city"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
       </div>
       <div class="flex flex-col">
         <label for="contract-type">Contracttype:</label>
@@ -115,8 +115,8 @@ const handleSubmit = async () => {
           id="contract-type"
           name="contract_type"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
 
         <label for="work-hours">Werkuren:</label>
         <input
@@ -124,8 +124,8 @@ const handleSubmit = async () => {
           id="work-hours"
           name="work_hours"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
 
         <label for="hired-at">In dienst sinds:</label>
         <input
@@ -133,8 +133,8 @@ const handleSubmit = async () => {
           id="hired-at"
           name="hired_at"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
 
         <label for="role">Functie:</label>
         <input
@@ -142,8 +142,8 @@ const handleSubmit = async () => {
           id="role"
           name="role"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
 
         <label for="department">Afdeling:</label>
         <input
@@ -151,8 +151,8 @@ const handleSubmit = async () => {
           id="department"
           name="department"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
 
         <label for="section">Sectie:</label>
         <input
@@ -160,8 +160,8 @@ const handleSubmit = async () => {
           id="section"
           name="section"
           required
-          class="border border-solid border-bd-grey mt-2 w-[600px] h-[40px] mb-[-30px]"
-        /><br /><br />
+          class="border border-solid border-bd-grey mt-2 mb-2 w-[600px] h-[40px] mb-[-30px]"
+        />
         <div class="flex justify-end gap-[20px] mt-[10px]">
           <router-link to="/dashboard"
             ><button class="bg-bd-grey w-[150px] h-[40px] text-white font-bold">
