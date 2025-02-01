@@ -20,7 +20,9 @@ const handleSubmit = async () => {
 
     if (response.status === 201) {
       const authToken = response.data.token; // API moet een token teruggeven
+
       setAuth(authToken, rememberMe.value); // Stel token in
+
       window.location.href = '/dashboard'; // Redirect na succesvol inloggen
     } else {
       alert(response.data.message || 'Inloggen mislukt');

@@ -3,6 +3,7 @@ import axios from "axios";
 const baseApiUrl = import.meta.env.VITE_APP_API_URL;
 
 const createApiUrl = (endpoint = "") => {
+
   return `${baseApiUrl}/${endpoint}`;
 };
 

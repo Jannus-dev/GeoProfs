@@ -18,7 +18,12 @@ const fetchLeaveData = async () => {
   try {
     isLoading.value = true;
 
-    const response = await get("leave", {}, {Authorization: token.value, 'Content-Type': 'application/json'});
+    const response = await get("leave", {},
+        {
+          Authorization: token.value,
+          'Content-Type': 'application/json',
+        }
+    );
 
 
     if (response.status === 200) {
