@@ -1,12 +1,34 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useApiConnector } from "@/composables/useApiConnector.ts";
+import { useAuthStore } from "@/stores/auth.ts";
+
+const { post } = useApiConnector();
+const { setAuth } = useAuthStore();
 
 const email = ref('');
 const password = ref('');
 const rememberMe = ref(false);
 
-const handleSubmit = () => {
-  console.log('Inloggen met:', { email: email.value, password: password.value, rememberMe: rememberMe.value });
+const handleSubmit = async () => {
+  try {
+    const response = await post('login', {
+      email: email.value,
+      password: password.value,
+      remember: rememberMe.value,
+    });
+
+    if (response.status === 201) {
+      const authToken = response.data.token; // API moet een token teruggeven
+      setAuth(authToken, rememberMe.value); // Stel token in
+      window.location.href = '/dashboard'; // Redirect na succesvol inloggen
+    } else {
+      alert(response.data.message || 'Inloggen mislukt');
+    }
+  } catch (error) {
+    console.error('Inloggen mislukt:', error);
+    alert('Er is een fout opgetreden. Probeer het opnieuw.');
+  }
 };
 </script>
 
